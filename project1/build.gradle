@@ -10,29 +10,25 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
     maven {
-        url "http://repo.spring.io/plugins-release/"
+        url "https://repo.spring.io/plugins-release/"
     }
     maven{
-        url "http://repo.maven.apache.org/maven2/"
+        url "https://repo.maven.apache.org/maven2/"
     }
 }
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server-standalone
     compile group: 'org.seleniumhq.selenium', name: 'selenium-server-standalone', version: '2.53.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.14.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '3.14.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.14.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-remote-driver', version: '3.14.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.14.0'
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '3.141.59'
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.141.59'
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.141.59'
+// https://mvnrepository.com/artifact/junit/junit
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
     compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.141.59'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-htmlunit-driver', version: '2.52.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-ie-driver', version: '3.14.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-safari-driver', version: '3.14.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-remote-control', version: '2.0rc2'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-edge-driver', version: '3.14.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-iphone-driver', version: '2.39.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-android-driver', version: '2.39.0'
-    compile group: 'io.appium', name: 'java-client', version: '6.1.0'
-    compile group: 'org.json', name: 'json', version: '20180813'
 }
